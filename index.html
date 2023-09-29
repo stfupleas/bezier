@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bezier Curve Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bezier Curve Generator</h1>
+        <div class="controls">
+            <div class="point-count">
+                <label for="pointCount">Number of Control Points:</label>
+                <select id="pointCount">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="point-control">
+                <label for="x1">Point 1:</label>
+                <input type="number" id="x1" placeholder="X">
+                <input type="number" id="y1" placeholder="Y">
+            </div>
+            <div class="point-control">
+                <label for="x2">Point 2:</label>
+                <input type="number" id="x2" placeholder="X">
+                <input type="number" id="y2" placeholder="Y">
+            </div>
+            <div class="point-control" id="point3">
+                <label for="x3">Point 3:</label>
+                <input type="number" id="x3" placeholder="X">
+                <input type="number" id="y3" placeholder="Y">
+            </div>
+            <div class="point-control" id="point4">
+                <label for="x4">Point 4:</label>
+                <input type="number" id="x4" placeholder="X">
+                <input type="number" id="y4" placeholder="Y">
+            </div>
+        </div>
+        <button id="drawButton">Draw Bezier Curve</button>
+        <canvas id="bezierCanvas" width="600" height="400"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    
